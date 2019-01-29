@@ -15,7 +15,7 @@ class HomeController extends Controller {
         out_trade_no,
         total_fee: 101,
         spbill_create_ip: '8.8.8.8',
-        notify_url: 'https://example.com/wechatpay/notify',
+        notify_url: 'http://test-wechat-pay-test.mishi.com/wechat-pay-notification',
       });
       console.log('--order --res---success---', res);
 
