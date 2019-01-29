@@ -41,6 +41,11 @@ class HomeController extends Controller {
     console.log('----end--->');
     // console.log('-------', JSON.stringify(this.ctx.app.config, 0, 2));
   }
+
+  async wechatNotification() {
+    console.log('---wechatPayStateCallBack-----');
+    this.ctx.response.body = 'wechatPayStateCallBack';
+  }
 }
 
 module.exports = HomeController;
